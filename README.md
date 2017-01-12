@@ -18,6 +18,22 @@ yo node-rest-api
 
 ## Introduction
 
+### Node Rest Api
+
+A simple template for building a node restful api service
+
+### Technology Stack
+- nodejs
+- express
+- mongodb
+- mocha
+- swagger-doc
+
+### Project Introduction
+- 使用ES6/ES7特性
+- 使用ESlint进行语法检测，遵循[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- 使用swagger-doc管理文档. Visualize document using Swagger UI.
+
 For more information about the project: [Document](generators/app/templates/express-rest-api/README.md)
 
 ## License

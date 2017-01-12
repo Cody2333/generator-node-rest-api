@@ -2,27 +2,21 @@ export default {
   develop: {
     mongodb: {
       host: 'localhost',
-      database: 'express-rest-api',
-      user: 'user',
-      password: 'password'
+      database: 'example'
     },
     port: 8888,
   },
   production: {
     mongodb: {
       host: 'localhost',
-      database: 'express-rest-api',
-      user: 'user',
-      password: 'password'
+      database: 'example-production'
     },
     port: 8888,
   },
   test: {
     mongodb: {
       host: 'localhost',
-      database: 'express-rest-api-test',
-      user: 'user',
-      password: 'password',
+      database: 'example-test'
     },
     port: 12345
   },

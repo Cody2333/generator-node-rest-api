@@ -1,6 +1,6 @@
 {
   "name": "generator-node-rest-api",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "yeoman generator for creating node restful api using express and mongodb",
   "author": {
     "name": "cody",
@@ -31,6 +31,5 @@
     }
   },
   "repository": "Cody2333/generator-node-rest-api",
-  "scripts": {
-  }
+  "scripts": {}
 }
