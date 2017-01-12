@@ -30,11 +30,11 @@ A simple template for building a node restful api service
 - swagger-doc
 
 ### Project Introduction
-- 使用ES6/ES7特性
-- 使用ESlint进行语法检测，遵循[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- 使用swagger-doc管理文档. Visualize document using Swagger UI.
+- suppot ES6/ES7 features
+- using ESlint followed [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- using swagger-doc to manage the document. Visualize document using Swagger UI.
 
-For more information about the project: [Document](generators/app/templates/express-rest-api/README.md)
+For more information about the project: [Document](generators/app/templates/node-rest-api/README.md)
 
 ## License
 
