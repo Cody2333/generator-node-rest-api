@@ -51,7 +51,6 @@ you can visualize the doc and test the api using Swagger Doc through web browser
 URL are as below
 
 [http://swagger.daguchuangyi.com/?url=http://localhost:8888/swagger.json#!](http://swagger.daguchuangyi.com/?url=http://localhost:8888/swagger.json#!)
-[11](xx)
 
 ## 项目结构
 ```
