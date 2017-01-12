@@ -27,10 +27,10 @@ const User = mongoose.model('user', UserSchema);
  *         default: objectId
  *       name:
  *         type: string
- *         default: 用户名
+ *         default: NAME
  *       role:
  *         type: string
- *         default: 身份
+ *         default: ROLE
  *       token:
  *         type: string
  *         default: TOKEN

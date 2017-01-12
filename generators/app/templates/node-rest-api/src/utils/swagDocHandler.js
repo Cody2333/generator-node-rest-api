@@ -2,12 +2,12 @@ import path from 'path';
 import swagger from 'swagger-jsdoc';
 
 export default async function swaggerDoc(req, res) {
-  // swagger definition
+  // swagger definition comes here
   const swaggerDefinition = {
     info: {
-      title: 'EXPRESS REST API DOC',
+      title: 'EXAMPLE REST API DOC',
       version: '1.0.0',
-      description: 'EXPRESS REST API DOC',
+      description: 'EXAMPLE REST API DOC',
     }
   };
   const options = {

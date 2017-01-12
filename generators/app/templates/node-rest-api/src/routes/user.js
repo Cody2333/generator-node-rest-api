@@ -10,8 +10,8 @@ const router = new express.Router();
  * @swagger
  * /user:
  *   get:
- *     summary: 用户列表
- *     description: 返回用户列表
+ *     summary: user list
+ *     description: return user list
  *     tags:
  *       - User
  *     responses:
@@ -34,27 +34,27 @@ router.get('/', async (req, res) => {
  * @swagger
  * /user/login:
  *   post:
- *     summary: 用户登录
- *     description: 用户用用户名和密码登录，会返回用户信息和 token
+ *     summary: user login
+ *     description: user login,return user info with token
  *     tags:
  *       - User
  *     parameters:
  *       - name: user
  *         in: body
  *         required: true
- *         description: 用户名和密码
+ *         description: user and password
  *         schema:
  *           type: object
  *           properties:
  *             name:
  *               type: string
- *               default: 用户名
+ *               default: username
  *             password:
  *               type: string
- *               default: 密码
+ *               default: password
  *     responses:
  *       200:
- *         description: 用户信息，包含 token
+ *         description: useinfo including token
  */
 router.post('/login', async (req, res, next) => {
   const { name, password } = req.body;
@@ -66,7 +66,7 @@ router.post('/login', async (req, res, next) => {
     if (user) {
       return res.send(user);
     }
-    next({ msg: '不正确的用户名或密码', status: 401 });
+    next({ msg: 'wrong username or password', status: 401 });
   } catch (err) {
     next(err);
   }
@@ -76,27 +76,27 @@ router.post('/login', async (req, res, next) => {
  * @swagger
  * /user/create:
  *   post:
- *     summary: 注册用户
- *     description: 用户注册
+ *     summary: register user
+ *     description: create user
  *     tags:
  *       - User
  *     parameters:
  *       - name: user
  *         in: body
  *         required: true
- *         description: 用户名和密码
+ *         description: username and password
  *         schema:
  *           type: object
  *           properties:
  *             name:
  *               type: string
- *               default: 用户名
+ *               default: username
  *             password:
  *               type: string
- *               default: 密码
+ *               default: password
  *     responses:
  *       200:
- *         description: 新建的用户信息
+ *         description: create new user
  */
 router.post('/create', async (req, res, next) => {
   const { name, password } = req.body;
@@ -104,7 +104,7 @@ router.post('/create', async (req, res, next) => {
     const token = `Token ${randomstring.generate(20)}${Date.now()}${randomstring.generate(20)}`;
     let user = await User.findOne({ name });
     if (user) {
-      return next({ msg: '用户名已存在', status: 403 });
+      return next({ msg: 'user already existed', status: 403 });
     }
     user = new User({
       name,
