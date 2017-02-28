@@ -29,7 +29,7 @@ app.use('/', routes);
 
 app.use(errorHandle);
 
-const port = config[process.env.NODE_ENV || 'develop'].port;
+const port = config.port;
 app.listen(port, () => {
   log.info(`App is listening on ${port}.`);
 });

@@ -1,23 +1,25 @@
-export default {
+const env = process.env.NODE_ENV;
+const common = {
+  port: 8880
+};
+const config = {
   develop: {
     mongodb: {
-      host: 'localhost',
+      host: '127.0.0.1',
       database: 'example'
-    },
-    port: 8888,
+    }
   },
   production: {
     mongodb: {
-      host: 'localhost',
+      host: '127.0.0.1',
       database: 'example-production'
-    },
-    port: 8888,
+    }
   },
   test: {
     mongodb: {
-      host: 'localhost',
+      host: '127.0.0.1',
       database: 'example-test'
-    },
-    port: 12345
-  },
+    }
+  }
 };
+export default Object.assign(common, config[env]);
