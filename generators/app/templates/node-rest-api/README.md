@@ -7,7 +7,7 @@ A simple template for building a node restful api service
 - express
 - mongodb
 - mocha
-- swagger-doc
+- swagger-jsdoc
 
 ## 项目简介
 - 使用ES6/ES7特性

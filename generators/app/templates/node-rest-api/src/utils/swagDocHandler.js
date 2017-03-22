@@ -1,7 +1,7 @@
 import path from 'path';
 import swagger from 'swagger-jsdoc';
 
-export default async function swaggerDoc(req, res) {
+export default async function (req, res) {
   // swagger definition comes here
   const swaggerDefinition = {
     info: {

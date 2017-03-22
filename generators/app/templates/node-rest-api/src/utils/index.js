@@ -1,3 +1,5 @@
-export errorHandle from './errorHandle';
-export swagDocHandler from './swagDocHandler';
-export db from './db';
+import db from './db';
+import swagDocHandler from './swagDocHandler';
+import errorHandle from './errorHandle';
+
+export { db, swagDocHandler, errorHandle };

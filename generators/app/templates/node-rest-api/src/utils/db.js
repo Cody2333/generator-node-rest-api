@@ -7,9 +7,9 @@ let status = 'DISCONNETED';
 
 const init = () => {
   if (status === 'DISCONNETED') {
-   let mongoUrl = `mongodb://${host}/${database}`;
+    let mongoUrl = `mongodb://${host}/${database}`;
     if (user && password) {
-     mongoUrl = `mongodb://${user}:${password}@${host}:27017/${database}?authSource=admin`;
+      mongoUrl = `mongodb://${user}:${password}@${host}:27017/${database}?authSource=admin`;
     }
     mongoose.connect(mongoUrl);
     status = 'CONNECTING';

@@ -1,5 +1,11 @@
 {
-  "presets": ["es2015", "stage-0"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
   "plugins": [
     ["module-resolver", {
       "root": ["./src"]

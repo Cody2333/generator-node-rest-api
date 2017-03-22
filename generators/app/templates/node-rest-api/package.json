@@ -1,6 +1,6 @@
 {
   "name": "node-rest-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "simple node restful api template using express,mongoose,mocha",
   "scripts": {
     "clean": "rimraf dist",
@@ -15,11 +15,9 @@
     "babel-cli": "^6.6.5",
     "babel-core": "^6.5.2",
     "babel-eslint": "^6.0.4",
-    "babel-plugin-module-resolver": "^2.2.0",
-    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-module-resolver": "^2.5.0",
     "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-env": "^1.2.2",
     "chai": "^3.5.0",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.1.0",
