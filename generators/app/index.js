@@ -134,7 +134,7 @@ temp/
       `
       All things are almost done.
       Last thing: Edit the mongodb config in [src/config.js] manually
-      Enter the porject dir and as below:
+      Enter the project dir and as below:
       Use command [npm install] or [yarn] to install the dependencies
       Use command [npm run start] to start the project
       Use command [npm run test] to run the test
